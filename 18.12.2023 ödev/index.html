@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>samira kılıç</title>
+</head>
+
+<body>
+    <button onclick="min()">Karşılaştırma</button>
+
+    <p id="minimum"></p>
+    <script>
+ 
+
+        function min() {
+            let a = prompt("Lütfen 1.sayı giriniz", "");
+            let b = prompt("Lütfen 2.sayı giriniz", "");
+            if (a == null || b == null) {
+                document.getElementById("minimum").innerHTML="Sayı Girmediniz!";
+            } else if (a > b) {
+                document.getElementById("minimum").innerHTML="Minimum sayı:" + b;
+            } else if (a < b) {
+                document.getElementById("minimum").innerHTML="Minimum sayı:" + a;
+            } else {
+                document.getElementById("minimum").innerHTML="Minimum sayı:" + a;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
